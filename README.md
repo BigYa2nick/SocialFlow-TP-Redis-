@@ -64,7 +64,25 @@ npm start
 # → App sur http://localhost:3000
 # Avoir l'app Expo Go pour run
 ```
+---
 
+## 🔌 API Endpoints
+
+| Méthode | Route | Auth | Description |
+|---------|-------|------|-------------|
+| POST | /api/auth/register | ❌ | Inscription |
+| POST | /api/auth/login | ❌ | Connexion → retourne token |
+| POST | /api/auth/logout | ✅ | Déconnexion |
+| POST | /api/posts | ✅ | Créer un post |
+| GET | /api/posts/timeline | ✅ | Timeline (depuis Redis) |
+| POST | /api/posts/:id/like | ✅ | Liker/unliker |
+| GET | /api/posts/trending | ✅ | Top posts du jour |
+| GET | /api/users/:id | ✅ | Profil utilisateur |
+| POST | /api/users/:id/follow | ✅ | Suivre |
+| DELETE | /api/users/:id/follow | ✅ | Ne plus suivre |
+| GET | /api/users/:id/suggestions | ✅ | Suggestions |
+
+---
 ---
 
 
