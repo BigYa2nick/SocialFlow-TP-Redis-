@@ -1,9 +1,9 @@
 # 🚀 SocialFlow — Réseau Social Redis + MySQL + React
 
 ## Stack technique
-- **Frontend** : React (Create React App)
+- **Frontend** : React (Create React App) avec Expo
 - **Backend** : Node.js + Express
-- **Base de données** : MySQL (XAMPP)
+- **Base de données** : MySQL (WAMPP)
 - **Cache / Temps réel** : Redis (Docker)
 
 ---
@@ -56,33 +56,17 @@ npm run dev
 # → Serveur sur http://localhost:5000
 ```
 
-### 4. Frontend
+### 4. Frontend (SocialFlow)
 ```bash
 cd frontend
 npm install
 npm start
 # → App sur http://localhost:3000
+# Avoir l'app Expo Go pour run
 ```
 
 ---
 
-## 🔌 API Endpoints
-
-| Méthode | Route | Auth | Description |
-|---------|-------|------|-------------|
-| POST | /api/auth/register | ❌ | Inscription |
-| POST | /api/auth/login | ❌ | Connexion → retourne token |
-| POST | /api/auth/logout | ✅ | Déconnexion |
-| POST | /api/posts | ✅ | Créer un post |
-| GET | /api/posts/timeline | ✅ | Timeline (depuis Redis) |
-| POST | /api/posts/:id/like | ✅ | Liker/unliker |
-| GET | /api/posts/trending | ✅ | Top posts du jour |
-| GET | /api/users/:id | ✅ | Profil utilisateur |
-| POST | /api/users/:id/follow | ✅ | Suivre |
-| DELETE | /api/users/:id/follow | ✅ | Ne plus suivre |
-| GET | /api/users/:id/suggestions | ✅ | Suggestions |
-
----
 
 ## 🗃️ Rôle de Redis dans l'app
 
