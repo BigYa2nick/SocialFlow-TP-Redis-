@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "name": "SocialFlow",
+    "slug": "socialflow",
+    "version": "1.0.0",
+    "scheme": "socialflow",
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    },
+    "plugins": ["expo-router"]
+  }
+}
