@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
   composerRow:     { flexDirection: 'row', gap: 10, marginBottom: 10 },
   avatar:          { width: 42, height: 42, borderRadius: RADIUS.full, backgroundColor: COLORS.primary, justifyContent: 'center', alignItems: 'center' },
   avatarText:      { color: COLORS.textWhite, fontWeight: 'bold', fontSize: FONTS.large },
-  composerInput:   { flex: 1, borderWidth: 1, borderColor: COLORS.border, borderRadius: RADIUS.md, padding: 10, fontSize: FONTS.medium, minHeight: 60, color: COLORS.textWhite },
+  composerInput:   { flex: 1, borderWidth: 1, borderColor: COLORS.border, borderRadius: RADIUS.md, padding: 10, fontSize: FONTS.medium, minHeight: 60, color: COLORS.textPrimary, backgroundColor: COLORS.primaryFade },
   composerFooter:  { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
   charCount:       { color: COLORS.textMuted, fontSize: FONTS.small },
   postBtn:         { backgroundColor: COLORS.primary, paddingHorizontal: 20, paddingVertical: 10, borderRadius: RADIUS.full },

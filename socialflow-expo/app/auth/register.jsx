@@ -6,6 +6,7 @@ import {
 import { useRouter } from 'expo-router';
 import { useAuth } from '../../context/AuthContext';
 import { API_URL } from '../../constants/api';
+import { COLORS } from '../../constants/theme';
 
 export default function RegisterScreen() {
   const [username, setUsername] = useState('');
@@ -80,11 +81,11 @@ export default function RegisterScreen() {
 }
 
 const styles = StyleSheet.create({
-  container:  { flex: 1, justifyContent: 'center', padding: 24, backgroundColor: '#000000' },
-  logo:       { fontSize: 36, fontWeight: 'bold', color: '#1d4ed8', textAlign: 'center', marginBottom: 8 },
-  subtitle:   { fontSize: 16, color: '#64748b', textAlign: 'center', marginBottom: 32 },
-  input:      { borderWidth: 1, borderColor: '#cbd5e1',color:'#ffffff', borderRadius: 10, padding: 14, marginBottom: 14, fontSize: 16 },
-  btn:        { backgroundColor: '#1d4ed8', padding: 16, borderRadius: 10, alignItems: 'center', marginBottom: 16 },
-  btnText:    { color: '#000000', fontWeight: 'bold', fontSize: 16 },
-  link:       { textAlign: 'center', color: '#1d4ed8', fontSize: 14 },
+  container:  { flex: 1, justifyContent: 'center', padding: 24, backgroundColor: COLORS.background },
+  logo:       { fontSize: 36, fontWeight: 'bold', color: COLORS.primary, textAlign: 'center', marginBottom: 8 },
+  subtitle:   { fontSize: 16, color: COLORS.textSecondary, textAlign: 'center', marginBottom: 32 },
+  input:      { borderWidth: 1, borderColor: COLORS.border , color:COLORS.textWhite, borderRadius: 10, padding: 14, marginBottom: 14, fontSize: 16 },
+  btn:        { backgroundColor: COLORS.primary, padding: 16, borderRadius: 10, alignItems: 'center', marginBottom: 16 },
+  btnText:    { color: COLORS.textWhite, fontWeight: 'bold', fontSize: 16 },
+  link:       { textAlign: 'center', color: COLORS.primary, fontSize: 14 },
 });
